@@ -10,6 +10,7 @@
 #include <vector>
 #include <map>
 
+#include "define_enum.h"
 #include "commonMacroFunction.h"
 #include "randomFunction.h"
 #include "keyManager.h"
@@ -23,20 +24,13 @@
 #include "keyAniManager.h"
 #include "iniDataManager.h"
 
-///////////////////////////
-
 
 #define GLOBALDATA GlobalData::getSingleton()
-///////////////////////////
 
 using namespace std;
 using namespace THETA_UTIL;
 
-//==============================
-// ## 디파인문 ## 17.04.26 ##
-//==============================
-
-#define WINNAME (LPTSTR)(TEXT("Theta API"))	//윈도우 창 이름
+#define WINNAME (LPTSTR)(TEXT("2dpuzzle"))	//윈도우 창 이름
 #define WINSTARTX 20						//윈도우 시작좌표X
 #define WINSTARTY 20						//윈도우 시작좌표Y
 #define WINSIZEX 960						//윈도우 가로크기
@@ -56,29 +50,10 @@ using namespace THETA_UTIL;
 #define INIDATA iniDataManager::getSingleton()
 
 
-//==============================
-// ## 매크로함수 ## 17.04.26 ##
-//==============================
-
 #define SAFE_DELETE(p) {if(p != NULL) {delete(p); (p) = NULL;}}
 #define SAFE_RELEASE(p) {if(p != NULL) {(p)->release();}}
 #define RELEASE_DELETE(p) {if(p != NULL) {(p)->release(); delete(p); (p) = NULL;}}
 
-//==============================
-// ## 전역변수 ## 17.05.01 ##
-//==============================
-
 extern HINSTANCE _hInstance;
 extern HWND _hWnd;
 extern POINT _ptMouse;
-
-
-// ----- define -----
-enum class DIRECTION
-{
-	NONE,
-	LEFT,
-	RIGHT,
-	UP,
-	DOWN
-};

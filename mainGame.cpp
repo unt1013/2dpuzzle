@@ -1,6 +1,7 @@
 #include "stdafx.h"
 #include "mainGame.h"
-
+#include "BattleScene.h"
+#include "MainScene.h"
 
 //======================================
 // 생성자랑 소멸자는 쓰지 않는다
@@ -55,5 +56,7 @@ void mainGame::render(void)
 
 void mainGame::SceneInit(void)
 {
-	
+	SCENEMANAGER->addScene("MainScene", new MainScene);
+	SCENEMANAGER->addScene("BattleScene", new BattleScene);
+	SCENEMANAGER->changeScene("BattleScene");
 }

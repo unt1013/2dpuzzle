@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "20170426_1", "20170426_1.vcxproj", "{461D76A9-44FE-496D-92F4-525F20E7773D}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2d_puzzle_action", "20170426_1.vcxproj", "{461D76A9-44FE-496D-92F4-525F20E7773D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,5 +18,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {26AC2BD5-5B6C-42C9-A4C8-8CB32DD3D0EB}
 	EndGlobalSection
 EndGlobal
